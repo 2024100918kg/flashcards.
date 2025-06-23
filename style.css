@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.flashcards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.flashcard {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+.question {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.answer {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    display: none;
+    font-style: italic;
+}
+
+.flashcard.active .answer {
+    display: block;
+    color: #2a9d8f;
+}
+
+.flashcard .question {
+    font-weight: bold;
+}
