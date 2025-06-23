@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,7 @@ body {
 .container {
     width: 90%;
     max-width: 1100px;
+    padding: 20px;
 }
 
 h1 {
@@ -33,18 +34,19 @@ h1 {
 }
 
 .flashcard {
-    background-color: #007bff; /* Cartão Azul */
+    background-color: #007bff; /* Azul para o cartão */
     color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-    min-height: 150px;
+    min-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .flashcard:hover {
@@ -53,14 +55,14 @@ h1 {
 }
 
 .question {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 .answer {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #d1ecf1;
-    margin-top: 10px;
+    margin-top: 15px;
     display: none;
     font-style: italic;
 }
@@ -72,6 +74,6 @@ h1 {
 }
 
 .flashcard .question {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
